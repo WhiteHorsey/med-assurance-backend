@@ -1,0 +1,9 @@
+id;key;value
+1;mail.host;smtp.gmail.com
+2;mail.port;587
+3;mail.username;honsali@gmail.com
+4;mail.password;dzev nspf twms qbax
+5;mail.protocol;smtp
+6;mail.smtp.auth;true
+7;mail.smtp.starttls.enable;true
+8;mail.smtp.ssl.trust;smtp.gmail.com

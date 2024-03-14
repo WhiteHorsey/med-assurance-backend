@@ -1,0 +1,352 @@
+id;libelle
+1;Afourar
+2;Agadir
+3;Aghbala
+4;Aghbalou
+5;Agdz
+6;Agouraï
+7;Aguelmous
+8;Ahfir
+9;Aïn Leuh
+10;Aïn Bni Mathar
+11;Ain Cheggag
+12;Aïn Dorij
+13;Aïn El Aouda
+14;Aïn Erreggada
+15;Aïn Harrouda
+16;Aïn Jemaa
+17;Aïn Karma
+18;Aïn Taoujdate
+19;Aït Iaaza
+20;Aït Baha
+21;Aït Boubidmane
+22;Aït Daoud
+23;Aït Ishaq
+24;Aït Melloul
+25;Aït Ourir
+26;Akka
+27;Aklim
+28;Aknoul
+29;Ajdir
+30;Al Aaroui
+31;Al Hoceïma
+32;Alnif
+33;Amalou Ighriben
+34;Amizmiz
+35;Aoufous
+36;Aoulouz
+37;Aourir
+38;Arbaoua
+39;Arfoud
+40;Assa
+41;Assahrij
+42;Assilah
+43;Azemmour
+44;Azilal
+45;Azrou
+46;Beni Mellal
+47;Boujdour
+48;Boulemane
+49;Boulemane Dadès
+50;Bab Berred
+51;Bab Taza
+52;Bejaad
+53;Ben Ahmed
+54;Ben Guerir
+55;Ben Taïeb
+56;Ben Yakhlef
+57;Ben Slimane
+58;Berkane
+59;Berrechid
+60;Bhalil
+61;Biougra
+62;Bni Ansar
+63;Bni Bouayach
+64;Bni Chiker
+65;Bni Drar
+66;Bni Hadifa
+67;Bni Tadjite
+68;Bouanane
+69;Bouarfa
+70;Boudnib
+71;Bouguedra
+72;Bouhdila
+73;Bouizakarne
+74;Boujniba
+75;Boulanouare
+76;Boumalne Dadès
+77;Boumia
+78;Bouskoura
+79;Bouznika
+80;Bouzthate
+81;Bradia
+82;Brikcha
+83;Bzou
+84;Casablanca
+85;Chefchaouen
+86;Chichaoua
+87;Dar Bni Karrich
+88;Dar Chaoui
+89;Dar El Kebdani
+90;Dar Gueddari
+91;Dar Ould Zidouh
+92;Dcheïra El Jihadia
+93;Debdou
+94;Demnate
+95;Deroua
+96;Drargua
+97;Driouch
+98;El Jadida
+99;Essaouira
+100;Echemmaia
+101;El Aïoun Sidi Mellouk
+102;El Borouj
+103;El Gara
+104;El Hajeb
+105;El Hanchane
+106;El Kbab
+107;El Kelaa des Mgouna
+108;El Kelaa des Sraghna
+109;El Ksiba
+110;El Mansouria
+111;El Marsa
+112;El Menzel
+113;El Ouatia
+115;Errachidia
+116;Er-Rich
+118;Fam El Hisn
+119;Farkhana
+120;Fès
+121;Figuig
+122;Fnideq
+123;Foum Jamaa
+124;Foum Zguid
+125;Fquih Ben Salah
+126;Guercif
+127;Ghafsaï
+128;Ghmate
+129;Goulmima
+130;Gourrama
+131;Guelmim
+132;Gueznaïa
+133;Guigou
+134;Guisser
+135;Had Bouhssoussen
+136;Had Kourt
+137;Had Oued Ifrane
+138;Haj Kaddour
+139;Hattane
+140;Houara
+141;Inezgane
+142;Ifrane
+143;Ighoud
+144;Ihddaden
+145;Imintanoute
+146;Imouzzer Kandar
+147;Imouzzer Marmoucha
+148;Imzouren
+149;Irherm
+150;Issaguen
+151;Itzer
+152;Jebha
+153;Jaadar
+154;Jamaat Shaim
+155;Jerada
+156;Jorf
+157;Jorf El Melha
+158;Kalaat M'Gouna
+159;Khenifra
+160;Kari El Jadida
+161;Karia Tétouan
+162;Karia Ba Mohamed
+163;Kariat Arekmane
+164;Kasba Tadla
+165;Kassita
+166;Kattara
+167;Kehf Nsour
+168;Kénitra
+169;Kerouna
+170;Kerrouchen
+171;Khémis Sahel
+172;Khémisset
+173;Khénifra
+174;Khénichet
+175;Khouribga
+176;Ksar El Kébir
+177;Larache
+178;Laâounate
+179;Laakarta
+180;Laattaouia
+181;Lakhsas
+182;Lahraouyine
+183;Lalla Mimouna
+184;Lalla Takarkoust
+185;Lakouablia
+186;Lbir Jdid
+187;Loualidia
+188;Loulad
+189;Lqliaa
+190;M'Diq
+191;Moulay Driss Zerhoun
+192;Maaziz
+193;Madagh
+194;Marrakech
+195;Martil
+196;Massa
+197;Matmata
+198;Médiouna
+199;Mechra Bel Ksiri
+200;Mehdya
+201;Meknès
+202;M'Haya
+203;Midar
+204;Midelt
+205;Missour
+206;Mohammédia
+207;Moqrisset
+208;Moulay Abdallah
+210;Moulay Bouazza
+211;Moulay Bousselham
+212;Moulay Brahim
+213;M'Rirt
+214;Nador
+215;Naïma
+216;Nouaceur
+217;Ouarzazate
+218;Oulmès
+219;Oualidia
+220;Ouaouizeght
+221;Oued Amlil
+222;Oued Heïmer
+223;Oued Laou
+224;Oued Zem
+225;Ouezzane
+226;Ouislane
+227;Oujda
+228;Oulad Abbou
+229;Oulad Amrane
+230;Oulad Ayad
+231;Oulad Berhil
+232;Oulad Frej
+233;Oulad Ghadbane
+234;Oulad H'Riz Sahel
+235;Oulad M'Barek
+236;Oulad Mrah
+237;Oulad Saïd
+238;Oulad Tayeb
+239;Oulad Teïma
+240;Oulad Yaïch
+241;Oulad Zbaïr
+242;Oum El Guerdane
+243;Ounagha
+244;Outat El Haj
+245;Rabat
+246;Ras El Aïn
+247;Ras El Ma
+248;Ribate El Kheïr
+249;Rissani
+250;Rommani
+251;Sabaa Aiyoun
+252;Safi
+253;Saïdia
+254;Salé
+255;Sebt El Guerdane
+256;Sebt El Maarif
+257;Sebt Gzoula
+258;Sebt Jahjouh
+259;Sefrou
+260;Selouane
+261;Semara
+262;Settat
+263;Sid L'Mokhtar
+264;Sid Zouin
+265;Sidi Abdallah Ghiat
+266;Sidi Addi
+267;Sidi Ahmed
+268;Sidi Ali Ban Hamdouche
+269;Sidi Allal El Bahraoui
+270;Sidi Allal Tazi
+271;Sidi Bennour
+272;Sidi Bou Othmane
+273;Sidi Boubker
+274;Sidi Bouknadel
+275;Sidi Bouzid
+276;Sidi Kacem
+277;Sidi Hajjaj Oulad Mrah
+278;Sidi Ifni
+279;Sidi Jaber
+280;Sidi Lyamani
+281;Sidi Rahhal
+282;Sidi Rahhal Chataï
+283;Sidi Slimane
+284;Sidi Slimane Echcharraa
+285;Sidi Smaïl
+286;Sidi Taïbi
+287;Sidi Yahya El Gharb
+288;Skhirate
+289;Skhour Rehamna
+290;Skoura
+291;Smimou
+292;Soualem
+293;Souk El Arbaâ
+294;Souk Sebt Oulad Nemma
+295;Tabounte
+296;Tafetachte
+297;Tafraout
+298;Tafrisset
+299;Taghjijt
+300;Tahannaout
+301;Tahla
+302;Taïnaste
+303;Talmest
+304;Taliouine
+305;Talsint
+306;Tamallalt
+307;Tamanar
+308;Tamassint
+309;Tamegroute
+310;Tameslouht
+311;Tanger
+312;Tan-Tan
+313;Taounate
+314;Tarfaya
+315;Targuist
+316;Taourirt
+317;Taroudant
+318;Tata
+319;Taza
+320;Taznakht
+321;Témara
+322;Temsia
+323;Tendrara
+324;Tétouan
+325;Thar Es Souk
+326;Tidass
+327;Tiflet
+328;Tighassaline
+329;Tighza
+330;Timahdite
+331;Tinejdad
+332;Tinghir
+333;Tissa
+334;Tit Mellil
+335;Tizi Ouasli
+336;Tiznit
+337;Tiztoutine
+338;Touima
+339;Touissit
+340;Toulal
+341;Tounfite
+342;Youssoufia
+343;Zag
+344;Zagora
+345;Zaïda
+346;Zaïo
+347;Zaouïat Bougrine
+348;Zaouïat Cheikh
+349;Zeghanghane
+350;Zemamra
+351;Zirara
+352;Zoumi
+353;Zrarda
+354;Zrenren

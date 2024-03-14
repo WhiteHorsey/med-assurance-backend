@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.12.xsd">
+    <!--
+        Added the constraints for entity User.
+    -->
+    <changeSet id="99999999999999-2" author="jhipster">    
+
+		<addForeignKeyConstraint baseColumnNames="avatar_id"
+                                 baseTableName="jhi_user"
+                                 constraintName="fk_user_avatar_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="media"/>
+		
+
+        <addForeignKeyConstraint baseColumnNames="compagnie_id"
+                                baseTableName="jhi_user"
+                                constraintName="fk_user_compagnie_id"
+                                referencedColumnNames="id"
+                                referencedTableName="compagnie"/>		
+		
+    </changeSet>
+    
+    <changeSet id="99999999999999-204" author="jhipster" context="dev, prod">
+        <loadUpdateData
+                  file="config/liquibase/data/user_update.csv"
+                  separator=";"
+                  tableName="jhi_user"
+                  primaryKey="id"  >
+            <column name="id" type="numeric"/>
+            <column name="compagnie_id" type="numeric"/>
+        </loadUpdateData>        
+    </changeSet> 
+</databaseChangeLog>

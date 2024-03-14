@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.12.xsd">
+    <!--
+        Added the constraints for entity EtatDemandeHist.
+    -->
+    <changeSet id="20220709112533-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="etat_demande_id"
+                                 baseTableName="etat_demande_hist"
+                                 constraintName="fk_etat_demande_hist__etat_demande_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="etat_demande"/>
+
+        <addForeignKeyConstraint baseColumnNames="demande_id"
+                                 baseTableName="etat_demande_hist"
+                                 constraintName="fk_etat_demande_hist__demande_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="demande"/>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <title>Changement d'État de la Demande</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      color: #333;
+    }
+    .header {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+    .content {
+      margin: 20px 0;
+      line-height: 1.6;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    .footer {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+    .section-header {
+      background-color: #0091AF;
+      padding: 10px;
+      color: white;
+    }
+    .section-content {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 20px; /* Increased margin for separation between sections */
+    }
+    .section-finale {
+      margin-bottom: 20px; /* Increased margin for separation between sections */
+      margin-top: 20px; /* Increased margin for separation between sections */
+    }
+  </style>
+</head>
+<body>
+<div class="header">
+  <h2>Récapitulatif de la Demande <span class="bold" th:text="${etatDemandeHist.demande.libelle}"></span></h2>
+</div>
+
+<div class="content">
+  <p>Une nouvelle demande porte le numéro <span class="bold" th:text="${etatDemandeHist.demande.libelle}"></span> a été crée avec l'état <span th:text="${etatDemandeHist.libelle}" style="font-weight: bold;"></span>.</p>
+</div>
+
+<div class="content">
+  <div class="section-header">Identification de la société d'assurance concernée par la demande</div>
+  <div class="section-content">
+    Compagnie: <span class="bold" th:text="${demande.compagnie.libelle}"></span><br>
+    Numero Police: <span th:text="${demande.numeroPolice}"></span><br>
+    Branche: <span th:text="${demande.branche.libelle}"></span><br>
+    Souscripteur: <span th:text="${demande.souscripteur}"></span><br>
+    Assure: <span th:text="${demande.assure}"></span><br>
+    Objet Litige: <span th:text="${demande.objetLitige.libelle}"></span>
+  </div>
+
+  <div class="section-header">Identification du demandeur de la médiation</div>
+  <div class="section-content">
+    Type Demandeur: <span th:text="${demande.demandeur.typeDemandeur.libelle}"></span><br>
+    Civilité : <span th:text="${demande.demandeur.civilite.libelle}"></span><br>
+    Libelle : <span th:text="${demande.demandeur.libelle}"></span><br>
+    Prénom : <span th:text="${demande.demandeur.prenom}"></span><br>
+    Adresse : <span th:text="${demande.demandeur.adresse}"></span><br>
+    Ville : <span th:text="${demande.demandeur.ville.libelle}"></span><br>
+    Telephone: <span th:text="${demande.demandeur.telephone}"></span><br>
+    Email: <span th:text="${demande.demandeur.email}"></span>
+  </div>
+
+  <div class="section-header">Identification du litige</div>
+  <div class="section-content">
+    <span th:if="${demande.dateSinistre != null}">Date Sinistre: <span th:text="${demande.dateSinistre}"></span><br></span>
+    <span th:if="${demande.numeroSinistre != null}">Numéro Sinistre: <span th:text="${demande.numeroSinistre}"></span><br></span>
+    <span th:if="${demande.natureSinistre != null}">Nature Sinistre: <span th:text="${demande.natureSinistre.libelle}"></span><br></span>
+    <span th:if="${demande.natureLitige != null}">Nature Litige: <span th:text="${demande.natureLitige.libelle}"></span><br></span>
+    Montant Reclamation: <span th:text="${demande.montantReclamation}"></span><br>
+    Description Litige: <span th:text="${demande.descriptionLitige}"></span>
+  </div>
+
+
+  <div class="section-header">Procédures en cours</div>
+  <div class="section-content">
+    En Cours Acaps: <span th:text="${demande.enCoursAcaps ? 'Oui' : 'Non'}"></span><br>
+    En Cours Autre Juridiction: <span th:text="${demande.enCoursAutreJuridiction ? 'Oui' : 'Non'}"></span>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"  lang="en">
+  <head>
+    <title>Réception Demande Médiation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <div>
+      <span>Nous accusons réception de votre demande de médiation. Nous lui avons affecté le numéro </span>
+      <span th:text="${etatDemandeHist.demande.libelle}"></span>
+    </div>
+    <div>
+      <span> Vous pouvez désormais suivre l'évolution de votre demande sur notre site www.mediateurassurance.ma</span>
+      <span> dans la rubrique "Suivre Demande"</span>
+    </div>
+  </body>
+</html>

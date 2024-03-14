@@ -1,0 +1,97 @@
+PLATEFORME MEDIATION ASSURANCE
+Objectifs recherchés
+1.	Fluidifier la communication entre les parties prenantes Assuré, Compagnie, Médiateur
+2.	Organiser l’archivage des requêtes et des échanges relatifs à celles-ci par assuré
+3.	Organiser les échanges avec chaque compagnie en créant un compte par compagnie
+4.	Permettre le dépôt de documents directement sur la plateforme 
+5.	Assurer le suivi des réclamations avec des rappels, des alertes, et des relances automatiques
+6.	Disposer d’un tableau de bord donnant une vue sur la situation actuelle
+7.	Disposer de statistiques permettant de concevoir un rapport annuel
+Indicateurs Tableau de bord
+1.	Nombre de demande année en cours et clôture année précédente
+2.	Demande de Médiation En attente de traitement
+3.	Demande en Cours
+•	Nombre total et par compagnie
+•	Age moyen en jours global et par compagnie
+
+4.	Demande clôturée
+•	En faveur Assuré
+•	En faveur Compagnie
+•	Sans solution
+•	Inéligible
+5.	Délai et alerte 
+a.	7 jours Nouvelle demande
+b.	30 jours en cours
+
+Reporting 
+6.	Nombre Réclamation pour une période donnée par branche, par nature de litige, par sort
+7.	Délai de traitement par compagnie, pour chaque étape et global
+
+
+
+Dans le formulaire de saisie de la demande de médiation, prière de
+
+Mettre les compagnies dans l’ordre alphabétique
+ré-ordonner la partie Identification de la société d’assurance comme suit, et dans cet ordre :
+Compagnie d’assurance
+Numéro de Police d’assurance.
+Branche d’assurance
+Souscripteur
+Assuré
+objet du litige, Dans « OBJET DU LITIGE » instaurer un menu déroulant avec SINISTRE, PRIME, GESTION du CONTRAT
+
+Si la case sinistre est cochée alors la rubrique C/Identification du litige, affiche
+
+
+Date de sinistre
+numero de sinistre
+nature du sinistre
+
+ 
+
+Pour la nature du sinistre,  instaurer un menu déroulant avec
+
+Auto matériel
+Auto corporel
+Assistance auto
+Assistance santé
+Maladie
+Décès
+Cotisation épargne
+Rachat épargne
+Retraite CIMR
+Incendie
+Dégâts des eaux
+Vol
+Bris de glace
+Accident de travail
+RC exploitation
+RC professionnelle
+RC produit
+Facultés Maritimes
+Corps de navire
+Transport terrestre
+Autre
+ 
+
+Sinon ne garder que , et dans cet ordre,
+
+Montant de la réclamation
+Description détaillée du Litige
+Pièces nécessaire à l’instruction de mon dossier
+
+ 
+
+La case « Description détaillée du Litige » doit être large de bout en bout (ou encore mieux ouvrir une feuille word qui restera en PDF collée à ce formulaire)
+
+
+
+onctionnalités de l'application médiateur:
+	•	application front déstinée aux assurés sur internet
+	•	fomulaire de saisie d’une réclamation
+	•	la réclamation est stoquée dans la base de données
+	•	un numéro de ticket est donné à l’assurée lui permettant de suivre l’avancement de sa réclamation
+	•	application backoffice réservé au médiateur et aux compagnies d’assurance
+	•	l’utilisateur qui a un profil “médiateur” trouve les réclamations saisie et la traite en la passant à l’état “en cours d’étude”, ou “besoin de complément d’information” dans ce cas l’assuré doit pouvoir compléter sa réclamation sur le formulaire (ajout de pièce jointe, info manquante etc)
+	•	profil “compagnie” pour que les compagnies d’assurance puissent consulter les réclamations qui les concernent et prévoir un aller retour entre compagnie et médiateur sous forme d’échange de text et pièces jointes
+	•	un écran dashboard permettant au médiateur d’avoir ses statistiques (demander les stat souhaitées à Laamarti)

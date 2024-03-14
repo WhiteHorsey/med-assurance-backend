@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.12.xsd">
+    <!--
+        Added the constraints for entity Demande.
+    -->
+    <changeSet id="20220709112531-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="compagnie_id"
+                                 baseTableName="demande"
+                                 constraintName="fk_demande__compagnie_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="compagnie"/>
+
+        <addForeignKeyConstraint baseColumnNames="demandeur_id"
+                                 baseTableName="demande"
+                                 constraintName="fk_demande__demandeur_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="demandeur"/>
+
+        <addForeignKeyConstraint baseColumnNames="etat_demande_hist_id"
+                                 baseTableName="demande"
+                                 constraintName="fk_demande__etat_demande_hist_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="etat_demande_hist"/>
+
+        <addForeignKeyConstraint baseColumnNames="resultat_demande_id"
+                                 baseTableName="demande"
+                                 constraintName="fk_demande__resultat_demande_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="resultat_demande"/>
+
+        <addForeignKeyConstraint baseColumnNames="branche_id"
+                                 baseTableName="demande"
+                                 constraintName="fk_demande__branche_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="branche"/>
+
+        <addForeignKeyConstraint baseColumnNames="nature_litige_id"
+                                 baseTableName="demande"
+                                 constraintName="fk_demande__nature_litige_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="nature_litige"/>
+
+        <addForeignKeyConstraint baseColumnNames="nature_sinistre_id"
+                                 baseTableName="demande"
+                                 constraintName="fk_demande__nature_sinistre_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="nature_sinistre"/>
+
+        <addForeignKeyConstraint baseColumnNames="objet_litige_id"
+                                 baseTableName="demande"
+                                 constraintName="fk_demande__objet_litige_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="objet_litige"/>
+    </changeSet>
+</databaseChangeLog>

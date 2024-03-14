@@ -1,0 +1,115 @@
+
+entity User { // +
+    login String required unique //+ readOnly notListable	
+                libelle String required unique //+ hidden notListable
+                //password String //+ hidden	notListable	
+                firstName String required 
+                lastName String required
+                email String required unique //+ 	notListable	 
+                imageUrl String // + hidden	notListable	
+    // authorities array // + hidden	notListable	
+}
+entity AppConfig { // +
+    key String required 
+        value String required
+}
+entity Media{
+    libelle String
+            order Integer //+ hidden	notListable	
+            key String //+ notListable
+            lien String //+ notListable
+            typeLien String //+ notListable
+            ownerType String //+ notListable
+            ownerId Long //+ notListable
+            file Blob // + hidden	notListable	
+}
+// #############################################################################################
+entity Compagnie { // + plabel(Compagnies) menu(admin)
+    libelle String required unique
+}
+entity Alerte { // + readOnly menu(admin)
+    libelle String required unique
+}
+entity Relance { // + readOnly menu(admin)
+    libelle String required unique
+}
+entity Demandeur { // + readOnly menu(admin)
+    libelle String required
+            prenom String required
+            adresse String required //+ 	notListable	 
+            telephone String required 
+            email String
+}
+entity Demande { // + readOnly menu(admin)
+    dateEtat LocalDate 
+            libelle String
+            numeroSinistre String 
+            numeroPolice String 
+            dateDemande LocalDate 
+            dateSinistre LocalDate
+            dateSouscription LocalDate //+ 	notListable	 
+            montantReclamation BigDecimal //+ 	notListable	 
+            descriptionLitige TextBlob //+ 	notListable	 
+            souscripteur String //+ 	notListable	 
+            assure String //+ 	notListable	 
+            enCoursAcaps Boolean
+            enCoursAutreJuridiction Boolean
+            dateEtude LocalDate 
+            dateTraitement LocalDate
+}
+entity EtatDemande { // + readOnly menu(admin|parametrage)
+    libelle String required unique
+}
+entity EtatDemandeHist { // + readOnly menu(admin|parametrage)
+    libelle String required
+        dateEtat LocalDate required
+        commentaire TextBlob // + 	notListable	 
+}
+entity ResultatDemande { // + readOnly menu(admin|parametrage)
+    libelle String required unique
+}
+entity Branche { // + readOnly menu(admin|parametrage)
+    libelle String required unique
+}
+entity TypeDemandeur { // + readOnly menu(admin|parametrage)
+    libelle String required unique
+}
+entity Civilite { // + readOnly menu(admin|parametrage)
+    libelle String required unique
+}
+entity Ville { // + readOnly menu(admin|parametrage)
+    libelle String required unique
+}
+entity ObjetLitige { // + readOnly menu(admin|parametrage)
+    libelle String required unique
+}
+entity NatureLitige { // + readOnly menu(admin|parametrage)
+    libelle String required unique
+}
+entity NatureSinistre { // + readOnly menu(admin|parametrage)
+    libelle String required unique
+}
+entity Actualite { // + readOnly menu(admin|parametrage)
+    libelle String required unique 
+    dateModification LocalDate
+    commentaire TextBlob // + 	notListable	 
+}
+relationship ManyToOne {
+    User{compagnie(libelle)} to Compagnie //+ isReference
+            Demande{compagnie(libelle)} to Compagnie //+ isReference
+            Demande{demandeur(libelle)} to Demandeur //+ isReference 
+            Demande{etatDemandeHist(libelle)} to EtatDemandeHist //+ isReference 
+            Demande{resultatDemande(libelle)} to ResultatDemande //+ isReference 
+            Demande{branche(libelle)} to Branche //+ isReference notListable
+            Demande{natureLitige(libelle)} to NatureLitige //+ isReference notListable
+            Demande{natureSinistre(libelle)} to NatureSinistre //+ isReference notListable
+            Demande{objetLitige(libelle)} to ObjetLitige //+ isReference notListable
+            Demandeur{typeDemandeur(libelle)} to TypeDemandeur //+ isReference 
+            Demandeur{civilite(libelle)} to Civilite //+ isReference 
+            Demandeur{ville(libelle)} to Ville //+ isReference 
+            EtatDemandeHist{etatDemande(libelle)} to EtatDemande //+ isReference 
+            EtatDemandeHist{demande(libelle)} to Demande // + isFather
+}
+skipClient *
+// Services {
+// }
